@@ -25,7 +25,76 @@
 @import url(jquery-ui.css);
 @import url(nice-select.css);
 
-/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+.services-box{
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px #edf0f2;
+    border-radius: 3px;
+    margin-top: 30px;
+    height: 14rem;
+}
+
+.services-text{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contact-us-card{
+        width: 70rem;
+        background-color: transparent;
+        border-radius: 1rem;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        height: 38rem;
+    
+}
+
+.solution-card {
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 16rem;
+
+
+}
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.solution-icon {
+    font-size: 40px;
+    color: #5865f2;
+
+}
+.solution-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+ 
+}
+.solution-description {
+    font-size: 0.95rem;
+    color: black;
+}
+.learn-more {
+    margin-top: 20px;
+    color: #5865f2;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333%;
+    }
+}
 
 * {
      box-sizing: border-box !important;
@@ -230,8 +299,8 @@ button {
 }
 
 .bg-light {
-    background-image: url(../images/header-bg.png);
-    background-color: transparent !important;
+    
+    background-color: white !important;
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 20px 60px 17px 70px;
@@ -328,6 +397,7 @@ button {
     width: 170px;
     float: left;
     margin-left: 20px;
+    border-radius: 40px;
 }
 
 .readmore_bt a {
@@ -349,8 +419,8 @@ button {
     bottom: -120px;
 }
 .carousel-indicators li {
-    width: 20px;
-    height: 20px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 100px;
     background-color: #ffffff;
 }
@@ -434,9 +504,14 @@ button {
 }
 .read_bt {
     width: 170px;
-    float: right;
-    padding-top: 64px;
+
+  
 }
+
+.blog-section{
+    margin-top: -4rem;
+}
+
 .read_bt a {
     width: 100%;
     float: left;
@@ -446,6 +521,7 @@ button {
     text-align: center;
     padding: 10px 0px;
     font-family: 'Roboto', sans-serif;
+    border-radius: 40px;
 }
 .read_bt a:hover {
     color: #ffffff;
@@ -459,7 +535,6 @@ button {
 .services_section{
     width: 100%;
     float: left;
-    background-image: url(../images/services-bg.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -539,7 +614,7 @@ button {
     font-size: 16px;
     color: #141414;
     margin: 0px;
-    padding-top: 20px;
+    padding-top: 0px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -651,7 +726,7 @@ button {
     width: 40%;
     float: left;
     font-size: 40px;
-    color: #ffffff;
+    color: black;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
@@ -660,7 +735,7 @@ button {
     position: absolute;
     width: 193px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: black;
     left: initial;
     right: 0px;
     top: 44%;
@@ -669,7 +744,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
+    color: black;
     margin: 0px;
    font-family: 'Roboto', sans-serif;
 }
@@ -684,7 +759,8 @@ button {
     font-size: 16px;
     color: #727272;
     border: 0px;
-    background-color: #ffff;
+    background-color: transparent;
+    border:1px solid rgb(206, 206, 206);
     padding: 15px;
     margin-top: 20px;
    font-family: 'Roboto', sans-serif;
@@ -696,15 +772,20 @@ input.mail_text::placeholder {
     color: #727272;
     width: 100%;
     font-size: 18px;
-    background-color: #ffff;
+    background-color: transparent;
     padding: 55px 15px 15px 15px;
     border: 0px;
+    border:1px solid rgb(206, 206, 206);
     height: 167px;
     margin-top: 20px;
    font-family: 'Roboto', sans-serif;
 }
 textarea#comment::placeholder {
     color: #727272;
+}
+
+.map-responsive{
+    width:40rem;
 }
 .map_main{
     width: 100%;
@@ -726,6 +807,7 @@ textarea#comment::placeholder {
     padding: 14px 0px;
     font-size: 16px;
    font-family: 'Roboto', sans-serif;
+   border-radius: 40px;
 }
 .send_bt a:hover {
     background-color: #ffffff;
@@ -775,7 +857,7 @@ textarea#comment::placeholder {
     width: 100%;
     font-size: 20px;
     text-transform: uppercase;
-    color: #13a25d;
+    color: #3871c1;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
@@ -800,7 +882,7 @@ textarea#comment::placeholder {
 }
 
 .testimonial_box:hover{
-    background-color: #13a25d;
+    background-color: #3871C1;
 }
 .testimonial_box:hover .dummy_text{
     color: #ffffff;
@@ -822,8 +904,8 @@ textarea#comment::placeholder {
     bottom: -100px;
 }
 #my_carousel .carousel-indicators li {
-    width: 20px;
-    height: 20px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 100px;
     background-color: #0a0a0a;
 }
