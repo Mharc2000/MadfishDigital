@@ -31,6 +31,15 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!-- Link Swiper's CSS -->
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+      />
+
+<!-- Add Swiper.js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
    </head>
    <body>
       <!--header section start -->
@@ -94,8 +103,8 @@
                                     <h1 class="banner_taital">Social Media Management</h1>
                                     <p class="banner_text"> Boost your online presence with virtual assistants managing your accounts and engaging your audience.</p>
                                     <div class="btn_main">
-                                       <div class="contact_bt active "><a href="#">Contact Us</a></div>
-                                       <div class="readmore_bt"><a href="#">Read More</a></div>
+                                       <div class="contact_bt active "><a href="#Contact">Contact Us</a></div>
+                                       <div class="readmore_bt"><a href="#About">Read More</a></div>
                                     </div>
                                  </div>
                               </div>
@@ -106,8 +115,8 @@
                                     <h1 class="banner_taital">Customer Support</h1>
                                     <p class="banner_text">Ensure client satisfaction with virtual assistants managing inquiries and follow-ups.</p>
                                     <div class="btn_main">
-                                       <div class="contact_bt active "><a href="#">Contact Us</a></div>
-                                       <div class="readmore_bt"><a href="#">Read More</a></div>
+                                       <div class="contact_bt active "><a href="#Contact">Contact Us</a></div>
+                                       <div class="readmore_bt"><a href="#About">Read More</a></div>
                                     </div>
                                  </div>
                               </div>
@@ -118,8 +127,8 @@
                                     <h1 class="banner_taital">Project Management</h1>
                                     <p class="banner_text">Let our virtual assistants oversee your projects, ensuring they stay on track and meet deadlines.</p>
                                     <div class="btn_main">
-                                       <div class="contact_bt active "><a href="#">Contact Us</a></div>
-                                       <div class="readmore_bt"><a href="#">Read More</a></div>
+                                       <div class="contact_bt active "><a href="#Contact">Contact Us</a></div>
+                                       <div class="readmore_bt"><a href="#About">Read More</a></div>
                                     </div>
                                  </div>
                               </div>
@@ -130,8 +139,8 @@
                                     <h1 class="banner_taital">Transactions Services</h1>
                                     <p class="banner_text">Convert audio or video content into accurate, readable text for meetings, interviews, and more.</p>
                                     <div class="btn_main">
-                                       <div class="contact_bt active "><a href="#">Contact Us</a></div>
-                                       <div class="readmore_bt"><a href="#">Read More</a></div>
+                                       <div class="contact_bt active "><a href="#Contact">Contact Us</a></div>
+                                       <div class="readmore_bt"><a href="#About">Read More</a></div>
                                     </div>
                                  </div>
                               </div>
@@ -352,6 +361,80 @@
          </div>
       </div>
 
+
+   
+      <div class="container" data-aos="fade-up">
+         
+           <h1 class="testimonial_taital">Clients</h1>
+           <p class="testimonial_text">They trusted us </p>
+ 
+           <div
+             class="clients-slider swiper"
+             data-aos="fade-up"
+             data-aos-delay="100"
+           >
+             <div class="swiper-wrapper align-items-center">
+               <div class="swiper-slide">
+                 <img
+                   src="images/clients/client-1.png"
+                   class="img-fluid"
+                   alt=""
+                 />
+               </div>
+               <div class="swiper-slide">
+                 <img
+                   src="images/clients/client-2.png"
+                   class="img-fluid"
+                   alt=""
+                 />
+               </div>
+               <div class="swiper-slide">
+                 <img
+                   src="images/clients/client-3.png"
+                   class="img-fluid"
+                   alt=""
+                 />
+               </div>
+               <div class="swiper-slide">
+                 <img
+                   src="images/clients/client-4.png"
+                   class="img-fluid"
+                   alt=""
+                 />
+               </div>
+               <div class="swiper-slide">
+                 <img
+                   src="images/clients/client-5.png"
+                   class="img-fluid"
+                   alt=""
+                 />
+               </div>
+               <div class="swiper-slide">
+                 <img
+                   src="images/clients/client-6.png"
+                   class="img-fluid"
+                   alt=""
+                 />
+               </div>
+               <div class="swiper-slide">
+                 <img
+                   src="images/clients/client-7.png"
+                   class="img-fluid"
+                   alt=""
+                 />
+               </div>
+               <div class="swiper-slide">
+                 <img
+                   src="images/clients/client-8.png"
+                   class="img-fluid"
+                   alt=""
+                 />
+               </div>
+             </div>
+             <div class="swiper-pagination"></div>
+           </div>
+      </div>
+     
       <!-- blog section end -->
       <!-- events section start -->
       <!-- events section end -->
@@ -408,5 +491,42 @@
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+           var swiper = new Swiper(".clients-slider", {
+             slidesPerView: 4,
+             spaceBetween: 30,
+             loop: true,
+             pagination: {
+               el: ".swiper-pagination",
+               clickable: true,
+             },
+             autoplay: {
+               delay: 2500,
+               disableOnInteraction: false,
+             },
+             breakpoints: {
+               320: {
+                 slidesPerView: 1,
+                 spaceBetween: 10,
+               },
+               480: {
+                 slidesPerView: 2,
+                 spaceBetween: 20,
+               },
+               640: {
+                 slidesPerView: 3,
+                 spaceBetween: 30,
+               },
+               1024: {
+                 slidesPerView: 4,
+                 spaceBetween: 40,
+               },
+             },
+           });
+         });
+       </script>
+       
    </body>
 </html>

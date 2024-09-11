@@ -1076,3 +1076,39 @@ textarea#comment::placeholder {
     position: relative; /* Ensure it is positioned */
     z-index: 10; /* Increase the z-index to make sure it is above other elements */
 }
+
+.clients-slider {
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 50px; /* Adds margin to the top */
+    margin-bottom: 50px; /* Adds margin to the bottom */
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    width: 150px; /* Increase the image size */
+    height: auto;
+    object-fit: contain;
+  }
+  
+
+  .section-title {
+    text-align: center; /* Centers the text */
+    margin-bottom: 30px; /* Adds spacing below the section */
+  }
+  
+  .section-title h4 {
+    font-size: 24px; /* Adjust the heading size as needed */
+    font-weight: bold;
+  }
+  
+  .section-title p {
+    font-size: 16px; /* Adjust the paragraph size as needed */
+    color: #555; /* Optional: Change color for better readability */
+  }
+  
